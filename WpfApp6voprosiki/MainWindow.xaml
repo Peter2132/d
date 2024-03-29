@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp6voprosiki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6voprosiki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            
+
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Тест" Grid.Column="0" TextAlignment="Center" />
+
+        <Button x:Name="Test" Content="Пройти тест" Grid.Row="3" Click="Test_Click" />
+
+        <Button x:Name="RedactTest" Content="Редактировать тест" Grid.Row="5" Click="RedactTest_Click"  />
+        <TextBox x:Name="CodeAdmin" Text="" TextAlignment="Center" TextChanged="CodeAdmin_TextChanged"  Grid.Row="2" IsEnabled="False"/>
+        
+
+        <Frame x:Name="PageFrame" Grid.Column="0" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+
+        
+
+    </Grid>
+</Window>

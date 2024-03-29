@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp6voprosiki.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6voprosiki"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+
+                
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+
+
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="AddTestButton" Content="Добавить тест" Click="AddTestButton_Click" Grid.Column="1"/>
+            <Button x:Name="BeginTestButton" Content="Начать тест" Click="BeginTestButton_Click" Grid.Column="3"/>
+            <Button x:Name="Back" Content="Назад" Click="Back_Click" Grid.Column="0"/>
+        </Grid>
+        <Frame x:Name="PageFrame" Grid.Column="0" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>
